@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../icons/logoConalep.png">
+    <title>Guardar Datos de Cultura</title>
+    <link rel="stylesheet" type="text/css" href="../estiloFormulario.css">
+    <script src="../scriptFormulario.js" defer></script>
+</head>
+<body>
+  <div id="registro-container">
+    <form method="POST" action="../php/guardarRegistroC.php">
+          <h2>Formulario de Cultura</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="n" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="a" required>
+
+        <label for="grupo">¿Qué grupo eres?</label>
+        <input type="text" id="grupo" name="g" pattern="\d{3}" required>
+
+        <label for="matricula">¿Qué matrícula tienes?</label>
+        <input type="text" id="matricula" name="m" pattern="^\d{9}-\d$" required>
+
+        <label for="telefono">¿Qué teléfono de contacto tienes?</label>
+        <input type="text" id="telefono" name="t" pattern="[0-9]{10}" required>
+
+        <label for="culturaElegida">¿A qué taller quieres inscribirte?</label>
+        <select id="culturaElegida" name="c" required>
+            <option value="no seleccionado">Elige un Taller</option>
+            <option value="baile">Baile</option>
+            <option value="danzaFolclorica">Danza Folclorica</option>
+            <option value="pintura">Pintura</option>
+            <option value="dibujo">Dibujo</option>
+            <option value="bandaDeGuerra">Banda De Guerra</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+        <label for="formModificacion">¿Te equivocaste con tu inscripción? ¡Presiona aquí!</label>
+        <input type="button" id="formModificacionC" value="Cambiar datos">
+        <label for="borrar">¿Ya no quieres estar en los talleres? ¡Presiona aquí!</label>
+        <input type="button" id="borrar" value="Borrar datos">
+    </form>
+  </div>
+</body>
+</html>

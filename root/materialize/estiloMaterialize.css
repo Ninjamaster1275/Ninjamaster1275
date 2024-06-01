@@ -1,0 +1,55 @@
+body{
+    background: none;
+    max-height: 60vh;
+    min-width: 100vw;
+}
+.deporteYCultura{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Dancing Script', cursive;
+    margin: 7px 0 50px 0;
+    display: inline;
+}
+.linea-division {
+    width: 80%;
+    height: 3px;
+    background-color: #36221c;
+}
+.carousel{
+    min-height: 500px;
+}
+.carousel-item img{
+    margin: 0;
+    width: 300%;
+    height: 130%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.9em;
+}
+/*Estilos de materialize*/
+.carousel .carousel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 900px;
+    height: 800px;
+}
+.carousel .indicators .indicator-item{
+    border-radius: 0;
+    transform: rotate(45deg);
+    margin: 0 15px;
+    background: #36221c;
+}
+a {
+    color: white !important;
+}
+a:hover {
+ color:white ;   
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificar Registro de Cultura</title>
+    <link rel="stylesheet" type="text/css" href="../estiloFormulario.css">
+    <script src="../scriptFormulario.js" defer></script>
+</head>
+<body>
+  <button id="volverBtn">Volver a la página principal</button>
+  <div id="registro-container">
+    <h2>¿Qué datos deseas cambiar?</h2>
+    <form method="POST" action="../php/modificarRegistro.php">
+        <label for="nombre">Nombre que vas a buscar:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="¿Qué nombre vas a buscar?" required>
+
+        <label for="nombreu">Nombre que vas a cambiar (opcional):</label>
+        <input type="text" id="nombreu" name="nombreu" placeholder="Nombre">
+
+        <label for="apellido">Apellido que vas a cambiar (opcional):</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+
+        <label for="grupo">Grupo que vas a cambiar (opcional):</label>
+        <input type="text" id="grupo" name="grupo" pattern="\d{3}" placeholder="Grupo">
+
+        <label for="matricula">Matrícula que vas a cambiar (opcional):</label>
+        <input type="text" id="matricula" name="matricula" pattern="^\d{9}-\d$" placeholder="Matrícula">
+
+        <label for="telefono">Teléfono que vas a cambiar (opcional):</label>
+        <input type="text" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Teléfono">
+
+        <label for="culturaElegida">¿A qué otro taller quieres inscribirte?</label>
+        <select id="culturaElegida" name="c">
+            <option value="no seleccionado">Elige un Taller</option>
+            <option value="baile">Baile</option>
+            <option value="danzaFolclorica">Danza Folclorica</option>
+            <option value="pintura">Pintura</option>
+            <option value="dibujo">Dibujo</option>
+            <option value="bandaDeGuerra">Banda De Guerra</option>
+        </select>
+
+        <button type="submit">Cambiar</button>
+    </form>
+  </div>
+</body>
+</html>

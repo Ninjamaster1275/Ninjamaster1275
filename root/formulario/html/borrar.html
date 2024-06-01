@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../estiloFormulario.css">
+    <script src="../scriptFormulario.js" defer></script>
+</head>
+<body>
+    <button id="volverBtn">Volver a la página principal</button>
+
+    <div id="registro-container">
+        <h2>Borrar datos</h2>
+        <form method="POST" action="../php/borrarRegistro.php">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="Matricula" name="Matricula"placeholder="que Matricula vas a buscar" required><br><br>
+            <input type="submit" value="borrar?">
+            <br>
+            <p>todos los datos relacionados a esa matricula seran borrados</p>
+        </form>
+    </div>
+
+</body>
+</html>

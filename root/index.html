@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Talleres y actividades</title>
+        <link rel="icon" href="icons/logoConalep.png">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="headerSuperior">
+                <div class="logo">
+                    <img src="static/cona.png" alt="logo" title="Click para ir al menú principal">
+                </div>
+                <h1>Conalep</h1>
+                <h2>Tlaquepaque</h2>
+                <div class="search">
+                  <form id="searchForm">
+                      <input type="search" id="searchInput" placeholder="¿Qué deseas buscar?" aria-label="Buscar">
+                      <button type="submit">Buscar</button>
+                  </form>
+              </div>
+            </div>
+            <div class="headerInferior">
+                <div class="menu">
+                    <input type="checkbox" id="check__menu">
+                    <label id="label__check" for="check__menu">
+                        <img src="icons/menu.svg" class="icon__menu">
+                    </label>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Nosotros</a>
+                                <ul>
+                                    <li><a href="https://www.conalep.edu.mx/misionvision">Misión y Visión</a></li>
+                                    <li><a href="https://www.conalep.edu.mx/valores-conalep">Valores Conalep</a></li>
+                                    <li><a href="https://www.conalep.edu.mx/modelo-academico-2018">Modelo Académico</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Estudiante</a>
+                                <ul>
+                                    <li><a href="https://www.conalep.edu.mx/index.php/admision">Aspirante</a></li>
+                                    <li><a href="https://www.conalep.edu.mx/">Alumno</a></li>
+                                    <li><a href="https://www.conalep.edu.mx/proceso-de-titulacion">Egresado</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Servicios</a>
+                                <ul>
+                                    <li><a href="https://www.conalep.edu.mx/vinculacion-social">Vinculación Social</a></li>
+                                    <li><a href="https://www.conalep.edu.mx/capacitacion">Capacitación</a></li>
+                                    <li><a href="https://www.conalep.edu.mx/tecnologicos">Tecnológicos</a></li>
+                                    <li><a href="https://www.conalep.edu.mx/evaluacion-y-certificacion-de-competencias">Evaluación de Competencias</a></li>
+                                    <li><a href="https://www.conalep.edu.mx/estudios_historicos">Estudios Académicos</a></li>
+                                    <li><a href="https://www.conalep.edu.mx/dfa">Formación Académica</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#comentarios">Comentarios</a></li>
+                            <li><a href="deportes/deporte.html">Deporte</a></li>
+                            <li><a href="cultura/cultura.html">Cultura</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <h2>Plantel CONALEP Tlaquepaque - 077</h2>
+        <div class="containerPoster">
+          <section id="poster"></section>
+        </div>
+        <div class="containerBotones">
+          <button id="deporteBoton"><span>Deporte</span></button>
+          <button id="culturaBoton"><span>Cultura</span></button>
+        </div>
+        <div class="center">
+          <iframe src="materialize/materialize.html" id="iframeMaterialize" title="Carrusel de Imagenes"></iframe>
+        </div>
+        <footer>
+          <div class="grid-container">
+            <div id="ofertaAcademica" class="grid-item">
+              <img src="icons/edit.svg" alt="Icono de oferta academica">
+              <h3>Oferta Académica</h3>
+              <ul>
+                <li><a href="https://www.conalepjalisco.edu.mx/web/index.php/conocenos/carreras/ciencia-de-datos-e-inteligencia-artificial">Ciencia de Datos e Inteligencia Artificial</a></li>
+                <li><a href="https://www.conalepjalisco.edu.mx/web/index.php/conocenos/carreras/informatica">Informática</a></li>
+                <li><a href="https://www.conalepjalisco.edu.mx/web/index.php/conocenos/carreras/contabilidad">Contabilidad</a></li>
+              </ul>
+            </div>
+            <div id="horarioDeAtencion" class="grid-item">
+              <img src="icons/reloj.svg" alt="Icono de horario de atención">
+              <h3>Horario de Atención</h3>
+              <p>Lunes-Viernes de 7:00 a 15:00 Hrs.<br>Turnos: Matutino y Vespertino<br>C.C.T: 14DPT0004K</p>
+            </div>
+            <div id="contacto" class="grid-item">
+              <img src="icons/telefono.svg" alt="Icono de contacto">
+              <h3>Contacto</h3>
+              <ul>
+                <li>33 3680-2504</li>
+                <li>33 3680-2376</li>
+                <li><img src="icons/mail.svg" alt="Email"><a href="mailto:tlaquepaque@conalepjalisco.edu.mx">tlaquepaque@conalepjalisco.edu.mx</a></li>
+              </ul>
+            </div>
+            <div id="transporte" class="grid-item">
+              <img src="icons/transporte.svg" alt="Icono de transporte">
+              <h3>Rutas de Transporte</h3>
+              <ul>
+                <li>207</li>
+                <li>330</li>
+                <li>333 A</li>
+                <li>604</li>
+                <li>610</li>
+                <li>610-A</li>
+                <li>611</li>
+                <li>611-A</li>
+                <li>616</li>
+                <li>643</li>
+                <li>646</li>
+              </ul>
+            </div>
+            <div id="ubicacion" class="grid-item">
+              <img src="icons/cerca.svg" alt="Icono ubicacion">
+              <h3>Ubicación</h3>
+              <ul>
+                <li>Calle: Esteban Ramírez No. 220, Esq. J. Álvarez del Castillo.</li>
+                <li>Colonia: Residencial La Soledad.</li>
+                <li>Código Postal: 45525</li>
+                <li>Ciudad/Municipio: Tlaquepaque</li>
+              </ul>
+            </div>
+            <div id="directorioExtensiones" class="grid-item">
+              <img src="icons/book.svg" alt="Icono directorio de extensiones">
+              <h3>Directorio de Extensiones</h3>
+              <ul>
+                <li>0- Operadora</li>
+                <li>1- Dirección</li>
+                <li>2- Promoción y Vinculación</li>
+                <li>3- Servicios Administrativos</li>
+                <li>4- Capacitación</li>
+                <li>5- Formación Técnica</li>
+                <li>6- Orientación Educativa</li>
+                <li>7- Servicios Escolares</li>
+                <li>8- Talleres</li>
+              </ul>
+            </div>
+          </div>
+          <section id="comentarios">
+            <h2>¿Tienes algún comentario? Ingresalo aquí:</h2>
+            <form id="commentForm" action="formulario/php/comentario.php" method="post">
+              <textarea cols="100" rows="7" placeholder="Escribe tu comentario aquí..." required name="comentario"></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </section>
+        </footer>
+    </body>
+</html>
